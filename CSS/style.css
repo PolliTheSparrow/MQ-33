@@ -3,7 +3,7 @@
   padding: 0;
 }
 .welcome {
-  background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg);
+  background-image: url(../Images/banner-bg.jpg);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -11,7 +11,34 @@
   position: relative;
   z-index: 0;
   padding: 5px 0px;
+  
+  
 }
+@media  (min-width: 361px) and (max-width: 770px) {
+  .welcome {
+   background-image: url(../Images/banner-bg-tablet.jpg);
+}
+h1  {
+  
+
+  margin-left: 82px;
+  margin-right: 82px;
+}}
+@media  (max-width: 360px) {
+  .welcome {
+    background-image: url(../Images/banner-mobile.jpg);
+    
+    height: 100%;
+  }
+
+h1 .logo-img {
+  margin-left: 48px;
+  margin-right: 48px;
+}
+.logo-img {
+  width: 100%;
+  
+}}
 .welcome::after {
   content: "";
   position: absolute;
@@ -32,7 +59,7 @@
   src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff);
 }
 .header-row {
-  width: 1170px;
+  
   padding: 0px 15px;
   display: flex;
   justify-content: space-between;
@@ -54,18 +81,20 @@
   font-family: "OpenSans-Regular";
   text-decoration: none;
 }
-.header-label {
+h1 {
   text-transform: uppercase;
   color: #ffffff;
   line-height: 75px;
   font-size: 45px;
   font-family: "OpenSans-bold";
-  width: 690px;
+  /*width: 690px;*/
+  width: 100%;
   text-align: center;
-  margin: 0px auto;
+  margin: 0 auto;
   padding-top: 125px;
   padding-bottom: 155px;
 }
+
 .trends-title {
   font-size: 20px;
   line-height: 29px;
@@ -90,6 +119,8 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+    flex-wrap: wrap;
+    
 
 }
 .trend-block-image {
@@ -100,6 +131,39 @@
   z-index: 0;
 
   
+}
+@media (min-width: 361px) and (max-width: 770px) {
+  .trend-block-image {
+  width: 49.7%;
+  margin-bottom: 3px;
+}
+h1 {
+  font-size: 40px;
+line-height: 55px;
+
+} 
+.header-row {
+  
+  padding: 0px 35px;
+  
+  padding-top: 50px;
+}
+.logo-img {
+  width: 160px;
+}
+}
+@media (max-width: 360px)  {
+  .trend-block-image {
+  width: 100%;
+  margin-bottom: 3px;
+} 
+h1 {
+  font-size: 26px;
+  line-height: 36px;
+}
+.header-row {
+  display: none;
+}
 }
 .trend-block-image::after {
   content: "";
@@ -149,29 +213,57 @@ text-decoration: none;
 
 display:inline-block;
 }
+
+@media (min-width: 771px) {
+  main {
+    width: 65%;
+
+  }
+  .news {
+    display: flex;
+    
+    justify-content: space-between;
+    margin: 0 245px;
+}}
+@media (min-width: 361px) and (max-width: 770px) {
+  main {
+    width: 50%;
+}
 .news {
   display: flex;
-  width: 1172px;
+  
   justify-content: space-between;
-  margin: 0 auto;
-}
-
+margin: 0 36px;
+}}
+@media (max-width: 360px) {
+  main {
+    width:100%; 
+    
+  }
+  .news {
+    display: flex;
+    flex-wrap: wrap;
+    
+  margin: 0 15px;
+}}
 .last-post-articles {
-  display: flex;
-  flex-direction: column;
-  width: 778px;
+  flex-grow: 1;
+ 
   margin-top: 64px;
 }
 .last-posts-article {
   display: flex;
+  width: 100%;
+  
 }
 .last-post-image {
-  width: 380px;
+  width: 48%; /*380px*/
   padding-right: 30px;
   margin-bottom: 60px;
 }
 .last-post-article-content {
   margin-bottom: 60px;
+  width: 48%; /**/
 }
 
 .tags {
@@ -220,8 +312,30 @@ display:inline-block;
   font-family: "OpenSans-Regular";
   padding-bottom: 15px;
 }
-aside {
-  width: 272px;
+@media (min-width: 771px) {
+  aside {
+    margin-left: 122px;
+    
+    width: 23%;
+  } 
+} 
+@media (min-width: 361px) and (max-width: 770px) {
+  aside {
+    width: 40%;
+    margin-left: 36px;
+  }
+  .last-posts-article {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 360px) {
+  aside {
+    width: 100%;
+    
+  }
+  .last-posts-article {
+    flex-wrap: wrap;
+  }
 }
 .new-posts {
   display: flex;
@@ -282,9 +396,12 @@ aside {
   display: flex;
   margin-top: 38px;
 }
+label {
+  flex-grow: 1;
+}
 .post-search-input {
   display: inline-block;
-  width: 223px;
+  width: 100%;
   height: 50px;
   font-size: 13px;
   color: #000000;
@@ -350,7 +467,7 @@ aside {
 .send-input {
   box-sizing: border-box;
   display: inline-block;
-  width: 271px;
+  width:100%;
   height: 50px;
   font-size: 13px;
   color: #000000;
@@ -364,7 +481,7 @@ aside {
   display: inline-block;
   margin-top: 17px;
   border: none;
-  width: 271px;
+  width: 100%;
   height: 49px;
   background-color: #b59f5b;
   background-position: center;
@@ -488,9 +605,9 @@ sup {
   margin-right: 246px;
   flex-direction: row;
   justify-content: space-between;
+    flex-wrap: wrap;
   margin: 0 auto;
   padding-bottom: 60px;
-  flex-wrap: wrap;
   
   
   
@@ -511,28 +628,31 @@ sup {
 }
 @media (min-width: 771px) {
   .shop-blocks {
-    width: 1172px;
-  }
+    margin-left: 245px;
+   margin-right: 245px;}
   .shop-block {
     width: 32%;
-    max-width: 351px;
+    /*max-width: 351px;*/
 }
 }
 
 @media (min-width: 361px) and (max-width: 770px) {
   .shop-block { 
     width: 49%; 
-    max-width: 335px;}
+    }
     .shop-blocks {
-      margin-left: 34px;             
+      margin-left: 35px;             
       margin-right: 35px;
       
     }  
+    .shop-block:nth-child(n+3) {
+      margin-top: 20px; 
+    }
 }
 @media (max-width: 360px) {
   .shop-block { 
     width: 100%;
-  max-width: 330px; 
+  
 margin-bottom: 20px; }
     .shop-blocks {
       margin-left: 16px;             
@@ -568,6 +688,7 @@ color: #b59f5b;
   border: 3px solid #b59f5b;
   padding: 55px 22px 28px;
   margin-top: -40px;
+  flex-grow: 1;
   
 }
 .form-shop {
@@ -617,10 +738,25 @@ text-transform: uppercase;
   text-decoration: none;
   
 }
+@media (min-width: 771px) {
+  .footer {
+margin-left: 245px;
+margin-right: 245px; }
+}
+@media (min-width: 361px) and (max-width: 770px) {
 .footer {
-  width: 1170px;
+  margin-left: 36px;
+  margin-right: 36px; } }
+  @media (max-width: 360px) {
+    .footer  {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  }
+.footer {
+  
   background-color: #f4f7f6;
-  margin: 0 auto;
+  margin-bottom: 52px;
   display: flex;
   justify-content: center;
   position: relative;
@@ -670,4 +806,13 @@ text-transform: uppercase;
 }
 .instagram {
   background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/005-instagram.svg);
+}
+.copyright {
+  font-size: 12px;
+line-height: 40px;
+color: #999999;
+font-family: "OpenSans-bold";
+text-align: center;
+margin-bottom: 48px;
+
 }
