@@ -592,12 +592,13 @@ sup {
 .shop-blocks {
   display: flex;
   margin: 0 auto;
+  
   flex-direction: row;
   justify-content: space-between;
     
  
   padding-bottom: 60px;
-  width: 1172px;
+  width: 1170px;
   
   
   
