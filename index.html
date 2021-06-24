@@ -33,33 +33,33 @@
         <div class="trend-images">
           <div class="trend-block-image trend-block-one" >
             <div class="trends-content">
-              <a href="#0" class="tags">lifestyle</a>
-              <a href="#0" class="tags">interior</a>
-              
+              <ul><li><a href="#0" class="tags">lifestyle</a></li>
+                <li><a href="#0" class="tags">interior</a></li>
+            </ul>
                 <h3><a href="#0" class="trend-content-title">сейчас в тренде: сад на подоконнике</a></h3>
              
             </div>
           </div>
           <div class="trend-block-image trend-block-two">
             <div class="trends-content">
-              <a href="#0" class="tags">food</a>
-              
+              <ul><li><a href="#0" class="tags">food</a></li></ul>
+              >
               
               <h3><a href="#0" class="trend-content-title">сыры на красивых картинках из интернета: какие они на вкус?</a></h3>
              
             </div>
           </div>
           <div class="trend-block-image trend-block-three"><div class="trends-content">
-            <a href="#0" class="tags">lifestyle</a>
-            <a href="#0" class="tags">travel</a>
-            
+            <ul><li><a href="#0" class="tags">lifestyle</a></li>
+            <li><a href="#0" class="tags">travel</a></li>
+          </ul>
             <h3><a href="#0" class="trend-content-title">собираемся в первый поход в горы</a></h3>
            
           </div></div>
           <div class="trend-block-image trend-block-four"><div class="trends-content">
-            <a href="#0" class="tags">food</a>
-            <a href="#0" class="tags">helth</a>
-            
+            <ul><a href="#0" class="tags">food</a>
+            <li><a href="#0" class="tags">helth</a></li>
+          </ul>
               <h3><a href="#0" class="trend-content-title">сейчас в тренде: сколько витамина с в лимонах?</a></h3> 
            
           </div></div>
@@ -73,8 +73,10 @@
                 <img class="last-post-image" src="https://netology-code.github.io/html-2-diploma/sources/images/last-post1.jpg" alt="Фото, на котором человек идет по отмели на рассвете">
               </div>
               <div class="last-posts-article-content">
-                <a href="#0" class="tags">travel</a>
-                <a href="#0" class="tags">health</a>
+                <ul><li><a href="#0" class="tags">travel</a></li>
+                  <li><a href="#0" class="tags">health</a></li>
+                  
+              </ul>
                 <h3 class="last-post-title">
                   <a href="#0" class="last-post-link">10 мест, ради которых стоит проснуться на рассвете</a>
                 </h3>
@@ -89,8 +91,11 @@
               <div> <img class="last-post-image" src="https://netology-code.github.io/html-2-diploma/sources/images/last-post2.jpg" alt="Фото, на котором девушка занимается йогой на берегу океана">
               </div>
               <div class="last-posts-article-content">
-                <a href="#0" class="tags">health</a>
-                <a href="#0" class="tags">lifestyle</a>
+                <ul>
+
+                <li><a href="#0" class="tags">health</a></li>
+                <li><a href="#0" class="tags">lifestyle</a></li>
+              </ul>
                 <h3 class="last-post-title">
                   <a href="#0" class="last-post-link">Йога для начинающих в домашних условиях</a>
                 </h3>
@@ -105,7 +110,7 @@
               <div> <img class="last-post-image" src="https://netology-code.github.io/html-2-diploma/sources/images/last-post3.jpg" alt="Фото девушки на концерте">
               </div>
               <div class="last-posts-article-content">
-                <a href="#0" class="tags">music</a>
+                <ul><li><a href="#0" class="tags">music</a></ul>
                 <h3 class="last-post-title">
                   <a href="#0" class="last-post-link">Лучшие музыкальные фестивали этого лета</a>
                 </h3>
@@ -121,9 +126,9 @@
               <div> <img class="last-post-image" src="https://netology-code.github.io/html-2-diploma/sources/images/last-post4.jpg" alt="Фото обеденного стола">
               </div>
               <div class="last-posts-article-content">
-                <a href="#0" class="tags">lifestyle</a>
-                <a href="#0" class="tags">food</a>
-      
+               <ul><li> <a href="#0" class="tags">lifestyle</a></li>
+               <li> <a href="#0" class="tags">food</a></li>
+              </ul>
                 <h3 class="last-post-title">
                   <a href="#0" class="last-post-link">Наукоёмкий подход к кулинарии</a>
                 </h3>
@@ -138,9 +143,9 @@
               <div> <img class="last-post-image" src="https://netology-code.github.io/html-2-diploma/sources/images/last-post5.jpg" alt="Фото розовой подушки">
               </div>
               <div class="last-posts-article-content">
-                <a href="#0" class="tags">lifestyle</a>
-                <a href="#0" class="tags">interior</a>
-      
+               <ul><li> <a href="#0" class="tags">lifestyle</a></li>
+               <li><a href="#0" class="tags">interior</a></li>
+              </ul>
                 <h3 class="last-post-title">
                   <a href="#0" class="last-post-link">Делаем модные принты на подушках для интерьера.</a>
                 </h3>
@@ -228,12 +233,13 @@
             </div>
           </div>
           <div class="form-row">
-            <label class="search-article">
+            <form class="post-search-form">
+               <label class="search-article">
               <span class="search-input">Найти на странице</span>
       
               <input type="search" class="post-search-input" placeholder="     Найти..."> </input>
             </label>
-            <form class="post-search-form">
+           
               <button class="button" class="post-search-button"></button>
             </form>
           </div>
@@ -248,8 +254,9 @@
                 <span class="send">Введите email для рассылки</span>
       
                 <input type="text" class="send-input" placeholder="   Ваш email-адрес"> </input>
+              </label>
             </div>
-            <button class="send-button" class="post-search-button">Подписаться</button>
+            <button class="send-button" class="post-search-button">Подписаться</button>  
           </form>
       
           <div class="tag-posts-title">

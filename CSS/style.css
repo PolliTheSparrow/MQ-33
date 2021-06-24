@@ -11,10 +11,11 @@
   position: relative;
   z-index: 0;
   padding: 5px 0px;
+ 
   
   
 }
-@media  (min-width: 361px) and (max-width: 770px) {
+@media  (max-width: 770px) {
   .welcome {
    background-image: url(../Images/banner-bg-tablet.jpg);
 }
@@ -27,8 +28,8 @@ h1  {
 @media  (max-width: 360px) {
   .welcome {
     background-image: url(../Images/banner-mobile.jpg);
-    
-    height: 100%;
+    background-position: center bottom;
+    height: 100vh;
   }
 
 h1 .logo-img {
@@ -132,7 +133,7 @@ h1 {
 
   
 }
-@media (min-width: 361px) and (max-width: 770px) {
+@media  (max-width: 770px) {
   .trend-block-image {
   width: 49.7%;
   margin-bottom: 3px;
@@ -216,20 +217,22 @@ display:inline-block;
 
 .news {
   display: flex;
-  width: 1172px;
+  max-width: 1170px;
   justify-content: space-between;
   margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-@media (min-width: 361px) and (max-width: 770px) {
-  main {
-    width: 50%;
-}
+@media  (max-width: 770px) {
+  .last-post-image {
+    max-width: 380px;
+    width: 100%; }
 .news {
   display: flex;
   
   justify-content: space-between;
-margin: 0 36px;
+
 }}
 @media (max-width: 360px) {
   main {
@@ -237,7 +240,7 @@ margin: 0 36px;
     
   }
   .news {
-    display: flex;
+    display: block;
     flex-wrap: wrap;
     
   margin: 0 15px;
@@ -245,14 +248,15 @@ margin: 0 36px;
 .last-post-articles {
   display: flex;
   flex-direction: column;
-  width: 778px;
+  
   margin-top: 64px;
 }
 .last-posts-article {
   display: flex;
 }
 .last-post-image {
-  width: 380px;
+  max-width: 380px;
+  
   padding-right: 30px;
   margin-bottom: 60px;
 }
@@ -308,23 +312,29 @@ margin: 0 36px;
 }
 aside {
   width: 272px;
+  flex: none;
+  margin-left: 36px;
+  
 }
-@media (min-width: 361px) and (max-width: 770px) {
-  aside {
-    width: 40%;
-    margin-left: 36px;
-  }
+@media  (max-width: 770px) {
+  
   .last-posts-article {
     flex-wrap: wrap;
+    display: block;
+  }
+  aside {
+    margin-left: 16px;
   }
 }
 @media (max-width: 360px) {
   aside {
     width: 100%;
+    margin: auto;
     
   }
   .last-posts-article {
     flex-wrap: wrap;
+    display: block;
   }
 }
 .new-posts {
@@ -385,14 +395,15 @@ aside {
 .form-row {
   display: flex;
   margin-top: 38px;
+  width: 100%;
 }
 label {
   flex-grow: 1;
 }
 .post-search-input {
   display: inline-block;
-  width: 100%;
-  height: 50px;
+  
+  height: 49px;
   font-size: 13px;
   color: #000000;
   font-family: "OpenSans-Regular";
@@ -458,7 +469,7 @@ label {
   box-sizing: border-box;
   display: inline-block;
   width:100%;
-  height: 50px;
+  height: 49px;
   font-size: 13px;
   color: #000000;
   font-family: "OpenSans-Regular";
@@ -595,10 +606,10 @@ sup {
   
   flex-direction: row;
   justify-content: space-between;
-    
+  flex-wrap: wrap;
  
   padding-bottom: 60px;
-  width: 1170px;
+  max-width: 1170px;
   
   
   
@@ -608,7 +619,8 @@ sup {
   align-items: center;
   flex-direction: column;
   flex-wrap: nowrap;
-  width: 345px;
+  max-width: 345px;
+  
 
   
 }
@@ -622,15 +634,16 @@ sup {
 }
 
 
-@media (min-width: 361px) and (max-width: 770px) {
+@media  (max-width: 770px) {
   .shop-block { 
-    width: 49%; 
+    width: 49.5%; 
+    
+
     }
-    .shop-blocks {
-      margin-left: 35px;             
-      margin-right: 35px;
-      
-    }  
+   .shop-blocks {
+     margin-left: 15px;
+     margin-right: 15px;
+   } 
     .shop-block:nth-child(n+3) {
       margin-top: 20px; 
     }
@@ -736,7 +749,7 @@ text-transform: uppercase;
   }
   }
 .footer {
-  width: 1170px;
+  max-width: 1170px;
   background-color: #f4f7f6;
   margin-bottom: 52px;
   display: flex;
@@ -799,4 +812,9 @@ text-align: center;
 margin-bottom: 48px;
 margin-top: 60px;
 
+}
+
+li {
+  list-style: none;
+  display: inline;
 }
