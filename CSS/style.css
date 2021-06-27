@@ -15,31 +15,9 @@
   
   
 }
-@media  (max-width: 770px) {
-  .welcome {
-   background-image: url(../Images/banner-bg-tablet.jpg);
-}
-h1  {
-  
 
-  margin-left: 82px;
-  margin-right: 82px;
-}}
-@media  (max-width: 360px) {
-  .welcome {
-    background-image: url(../Images/banner-mobile.jpg);
-    background-position: center bottom;
-    height: 100vh;
-  }
 
-h1 .logo-img {
-  margin-left: 48px;
-  margin-right: 48px;
-}
-.logo-img {
-  width: 100%;
-  
-}}
+
 .welcome::after {
   content: "";
   position: absolute;
@@ -60,7 +38,7 @@ h1 .logo-img {
   src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff);
 }
 .header-row {
-  
+  max-width: 1170px;
   padding: 0px 15px;
   display: flex;
   justify-content: space-between;
@@ -88,7 +66,7 @@ h1 {
   line-height: 75px;
   font-size: 45px;
   font-family: "OpenSans-bold";
-  width: 690px;
+  max-width: 690px;
  
   text-align: center;
   margin: 0 auto;
@@ -133,39 +111,7 @@ h1 {
 
   
 }
-@media  (max-width: 770px) {
-  .trend-block-image {
-  width: 49.7%;
-  margin-bottom: 3px;
-}
-h1 {
-  font-size: 40px;
-line-height: 55px;
 
-} 
-.header-row {
-  
-  padding: 0px 35px;
-  
-  padding-top: 50px;
-}
-.logo-img {
-  width: 160px;
-}
-}
-@media (max-width: 360px)  {
-  .trend-block-image {
-  width: 100%;
-  margin-bottom: 3px;
-} 
-h1 {
-  font-size: 26px;
-  line-height: 36px;
-}
-.header-row {
-  display: none;
-}
-}
 .trend-block-image::after {
   content: "";
   position: absolute;
@@ -224,27 +170,7 @@ display:inline-block;
   padding-right: 15px;
 }
 
-@media  (max-width: 770px) {
-  .last-post-image {
-    max-width: 380px;
-    width: 100%; }
-.news {
-  display: flex;
-  
-  justify-content: space-between;
 
-}}
-@media (max-width: 360px) {
-  main {
-    width:100%; 
-    
-  }
-  .news {
-    display: block;
-    flex-wrap: wrap;
-    
-  margin: 0 15px;
-}}
 .last-post-articles {
   display: flex;
   flex-direction: column;
@@ -316,27 +242,7 @@ aside {
   margin-left: 36px;
   
 }
-@media  (max-width: 770px) {
-  
-  .last-posts-article {
-    flex-wrap: wrap;
-    display: block;
-  }
-  aside {
-    margin-left: 16px;
-  }
-}
-@media (max-width: 360px) {
-  aside {
-    width: 100%;
-    margin: auto;
-    
-  }
-  .last-posts-article {
-    flex-wrap: wrap;
-    display: block;
-  }
-}
+
 .new-posts {
   display: flex;
 
@@ -402,7 +308,7 @@ label {
 }
 .post-search-input {
   display: inline-block;
-  
+  width: 100%;
   height: 49px;
   font-size: 13px;
   color: #000000;
@@ -634,31 +540,7 @@ sup {
 }
 
 
-@media  (max-width: 770px) {
-  .shop-block { 
-    width: 49.5%; 
-    
 
-    }
-   .shop-blocks {
-     margin-left: 15px;
-     margin-right: 15px;
-   } 
-    .shop-block:nth-child(n+3) {
-      margin-top: 20px; 
-    }
-}
-@media (max-width: 360px) {
-  .shop-block { 
-    width: 100%;
-  
-margin-bottom: 20px; }
-    .shop-blocks {
-      margin-left: 16px;             
-      margin-right: 16px;
-      
-    }
-}
 .content-title {
   font-family: "OpenSans-bold";
   text-transform: uppercase;
@@ -738,16 +620,7 @@ text-transform: uppercase;
   
 }
 
-@media (min-width: 361px) and (max-width: 770px) {
-.footer {
-  margin-left: 36px;
-  margin-right: 36px; } }
-  @media (max-width: 360px) {
-    .footer  {
-    margin-left: 15px;
-    margin-right: 15px;
-  }
-  }
+
 .footer {
   max-width: 1170px;
   background-color: #f4f7f6;
@@ -818,3 +691,123 @@ li {
   list-style: none;
   display: inline;
 }
+@media  (max-width: 1199px) {
+  .welcome {
+    background-image: url(../Images/banner-bg-tablet.jpg);
+ }
+ h1  {
+   
+ 
+   margin-left: 82px;
+   margin-right: 82px;
+ }
+ .trend-block-image {
+  width: 49.7%;
+  margin-bottom: 3px;
+}
+h1 {
+  font-size: 40px;
+line-height: 55px;
+
+} 
+.header-row {
+  
+  padding: 0px 35px;
+  
+  padding-top: 50px;
+}
+.logo-img {
+  width: 160px;
+}
+.last-post-image {
+  max-width: 380px;
+  width: 100%; }
+.news {
+display: flex;
+
+justify-content: space-between;
+
+}
+.last-posts-article {
+  flex-wrap: wrap;
+  display: block;
+}
+aside {
+  margin-left: 16px;
+}
+.shop-block { 
+  width: 49.5%; 
+  
+
+  }
+ .shop-blocks {
+   margin-left: 15px;
+   margin-right: 15px;
+ } 
+  .shop-block:nth-child(n+3) {
+    margin-top: 20px; 
+  }
+  .footer {
+    margin-left: 36px;
+    margin-right: 36px; }
+}
+@media  (max-width: 767px) {
+  .welcome {
+    background-image: url(../Images/banner-mobile.jpg);
+    background-position: center bottom;
+    height: 100vh;
+  }
+
+h1 .logo-img {
+  margin-left: 48px;
+  margin-right: 48px;
+}
+.logo-img {
+  width: 100%;
+  
+}
+.trend-block-image {
+  width: 100%;
+  margin-bottom: 3px;
+} 
+h1 {
+  font-size: 26px;
+  line-height: 36px;
+}
+.header-row {
+  display: none;
+}
+main {
+  width:100%; 
+  
+}
+.news {
+  display: block;
+  flex-wrap: wrap;
+  
+margin: 0 15px;
+}
+aside {
+  width: 100%;
+  margin: auto;
+  
+}
+.last-posts-article {
+  flex-wrap: wrap;
+  display: block;
+}
+.shop-block { 
+  width: 100%;
+
+margin-bottom: 20px; }
+  .shop-blocks {
+    margin-left: 16px;             
+    margin-right: 16px;
+    
+  }
+  .footer  {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+
