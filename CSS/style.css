@@ -11,6 +11,7 @@
   position: relative;
   z-index: 0;
   padding: 5px 0px;
+  
  
   
   
@@ -780,10 +781,18 @@ aside {
   }
 
 h1, .logo {
-  margin:auto;
+  margin: auto auto;
 }
 .menu-list {
   display: none;
+}
+.header-row {
+justify-content: center;
+}
+.menu__button, .menu__button::before, .menu__button::after {
+  position: absolute;
+  top: 30px;
+ right: 15px;
 }
 
 .menu-list {
@@ -801,9 +810,7 @@ h1 {
   font-size: 26px;
   line-height: 36px;
 }
-.header-row {
-  display: none;
-}
+
 main {
   width:100%; 
   
