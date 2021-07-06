@@ -46,7 +46,9 @@
   align-items: center;
   padding-top: 27px;
 }
-
+.menu__button-label, .menu__button  {
+  display: none;
+}
 .logo-img {
   width: 180px;
 }
@@ -710,12 +712,31 @@ h1 {
 line-height: 55px;
 
 } 
-.header-row {
-  
-  padding: 0px 35px;
-  
-  padding-top: 50px;
+.menu__button, .menu__button::before, .menu__button::after {
+  content: " ";
+  display: block;
+  width: 23px;
+height: 3px;
+background-color: #ffffff;
+
+margin-right: 15px;
+
+
+
 }
+
+.menu__button::before {
+  
+  margin-top: -12px;
+}
+.menu__button::after {
+  
+  margin-top: 12px;
+}
+.menu-list {
+  display: none;
+}
+
 .logo-img {
   width: 160px;
 }
@@ -758,9 +779,15 @@ aside {
     height: 100vh;
   }
 
-h1 .logo-img {
-  margin-left: 48px;
-  margin-right: 48px;
+h1, .logo {
+  margin:auto;
+}
+.menu-list {
+  display: none;
+}
+
+.menu-list {
+  display: none;
 }
 .logo-img {
   width: 100%;
