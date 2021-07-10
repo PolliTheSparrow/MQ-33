@@ -822,6 +822,8 @@ margin: auto auto;
 h1 {
   font-size: 26px;
   line-height: 36px;
+  padding: 0;
+  margin: auto auto;
 }
 
 main {
