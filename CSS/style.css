@@ -790,6 +790,9 @@ aside {
     background-image: url(../Images/banner-mobile.jpg);
     background-position: center bottom;
     height: 100vh;
+    display: flex;
+     flex-direction: column; 
+     justify-content: center;
   }
 
 
@@ -798,8 +801,7 @@ aside {
 }
 .header-row {
 justify-content: center;
-padding: 0;
-margin: auto auto;
+
 }
 .menu__button, .menu__button::before, .menu__button::after {
   position: absolute;
@@ -848,10 +850,17 @@ aside {
 .shop-block { 
   width: 100%;
 
-margin-bottom: 20px; }
+margin-bottom: 20px; 
+align-items: center;
+justify-content: center;
+}
   .shop-blocks {
     margin-left: 16px;             
     margin-right: 16px;
+    
+    
+
+
     
   }
   .footer  {
@@ -863,21 +872,21 @@ html {
   position: relative;
 }
 .popup {
-  
-  position: fixed;
+    position: fixed;
   top: 0;
   left: 0;
  min-width: 100%;
  min-height: 100%;
- display: flex;
  
- align-items:center;
+  align-items:center;
  justify-content: center;
  flex-wrap: wrap;
+ display: none;
  
 
 }
 .popup::before {
+  
   content: " ";
   background: black;
   opacity: 0.7;
