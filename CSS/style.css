@@ -1012,21 +1012,24 @@ border: 1px solid #b59f5b;
   position: relative;
 }
 
-.radio-group {
-  display: inline-block;
+.radio-group-text::before {
+ 
   background-image: url(../SVG/form-empty-circle.svg);
 }
 .radio {
   display: flex;
   flex-wrap: nowrap;
-  position:absolute;
+
+}
+input {
+  position: absolute;
   opacity: 0;
 }
 .radio:checked {
   outline: 1px solid #b59f5b;
 
 }
-.radio:checked ~ .radio-group-text::before {
+input:checked ~ .radio-group-text::before {
   background-image: url(../SVG/form-circle.svg);
   
 }
