@@ -911,6 +911,7 @@ html {
   z-index:  9999;
   width: 390px;
   height: 590px;
+  position: relative;
   
 }
 .popup-header {
@@ -941,6 +942,8 @@ margin: 14px auto 28px auto;
 line-height: 20px;
 color: #000000;
 font-family: "OpenSans-regular";
+display: block;
+margin-bottom: 8px;
 }
 
 .feedback-button {
@@ -1010,11 +1013,27 @@ border: 1px solid #b59f5b;
 }
 .feedback-radio {
   position: relative;
+  
 }
 
 .radio-group-text::before {
- 
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-size: 25px;
   background-image: url(../SVG/form-empty-circle.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-right: 8px;
+  
+}
+.radio-group-text {
+  margin-right: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
 .radio {
   display: flex;
@@ -1024,6 +1043,8 @@ border: 1px solid #b59f5b;
 input {
   position: absolute;
   opacity: 0;
+  margin-left: 8px;
+  margin-top: 8px;
 }
 .radio:checked {
   outline: 1px solid #b59f5b;
@@ -1036,6 +1057,37 @@ input:checked ~ .radio-group-text::before {
 option  {
   margin-left: 20px;
 }
+.closer {
+  position: fixed;
+  display: block;
+    margin-top: -30px;
+  margin-left: 362px;
+  display: block;
+  width: 28px;
+  height: 28px;
+  background-image: url(../SVG/form-x.svg);
+  background-repeat: no-repeat;
+  background-size: 28px;
+ cursor: pointer;
+  background-position: center center;
+  z-index: 2;
+ 
+
+
+
+}
+.popup__close {
+  opacity: 0;
+  position: fixed;
+  display: block;
+    margin-top: -30px;
+  margin-left: 362px;
+}
+.feedback-text {
+  margin-top: 20px;
+}
+
+
 @media  (max-width: 767px) {
 .popup__container {
    
@@ -1045,5 +1097,13 @@ option  {
 .popup-header {
   margin-top: 30px;
 }
-
+.closer {
+  margin-left: 302px;
+}
+.feedback-text {
+  margin-top: 10px;
+}
+.selects {
+  margin-bottom: 20px;
+}
 }
