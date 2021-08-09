@@ -1008,6 +1008,10 @@ border: 1px solid #b59f5b;
 .selects:focus {
   outline: 1px solid #b59f5b;
 }
+.feedback-radio {
+  position: relative;
+}
+
 .radio-group {
   display: inline-block;
   background-image: url(../SVG/form-empty-circle.svg);
@@ -1015,6 +1019,8 @@ border: 1px solid #b59f5b;
 .radio {
   display: flex;
   flex-wrap: nowrap;
+  position:absolute;
+  opacity: 0;
 }
 .radio:checked {
   outline: 1px solid #b59f5b;
