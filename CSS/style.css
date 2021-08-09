@@ -816,6 +816,7 @@ margin: 0 auto;
 }
 .logo-img {
   width: 100%;
+  padding-bottom: 30px;
   
   
 }
@@ -830,7 +831,8 @@ margin: 0 auto;
 h1 {
   font-size: 26px;
   line-height: 36px;
-  padding: 15px auto;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 main {
@@ -965,7 +967,16 @@ textarea {
   background-color: #f4f7f6;
   border: none;
   height: 130px;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-top: 15px;
  
+}
+textarea:hover {
+  border: 1px solid #b59f5b;
+}
+textarea:focus {
+  outline: 1px solid #b59f5b;
 }
 
 .selects {
@@ -975,27 +986,43 @@ textarea {
   border: none;
   background-image: url(../SVG/form-arrows.svg);
   background-repeat: no-repeat;
-  background-position: right 5px center;
-  background-size: 14px;
+  background-position: right 7px center;
+  background-size: 13px;
+  box-sizing: border-box;
+  padding-left: 20px;
+  appearance: none;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 30px;
+ 
+  
 
   
   
 }
-.select {
-  position: absolute;
-  clip:rect(1px,1px,1px,1px);
-  height: 1px;
-  width: 1px;
+
+.selects:hover {
+
+border: 1px solid #b59f5b;
 }
 .selects:focus {
-  border: 1px solid #b59f5b;
+  outline: 1px solid #b59f5b;
 }
 .radio-group {
   display: inline-block;
+  background-image: url(../SVG/form-empty-circle.svg);
 }
 .radio {
   display: flex;
   flex-wrap: nowrap;
+}
+.radio:checked {
+  outline: 1px solid #b59f5b;
+
+}
+.radio:checked ~ .radio-group-text::before {
+  background-image: url(../SVG/form-circle.svg);
+  
 }
 option  {
   margin-left: 20px;
