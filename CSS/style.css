@@ -871,7 +871,7 @@ aside {
 
 .shop-block { 
   width: 100%;
-
+max-width: 100%;
 margin-bottom: 20px; 
 
 }
@@ -895,7 +895,7 @@ html {
   position: relative;
 }
 .popup {
-  display: flex;
+  display: none;
     position: fixed;
   top: 0;
   left: 0;
@@ -1078,7 +1078,7 @@ option  {
 .closer {
   position: absolute;
   display: block;
-    top: -25px;
+   top: -25px;
   right: 0px;
   display: block;
   width: 20px;
