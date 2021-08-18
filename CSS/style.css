@@ -895,7 +895,7 @@ html {
   position: relative;
 }
 .popup {
-  display: none;
+  display: flex;
     position: fixed;
   top: 0;
   left: 0;
@@ -925,7 +925,7 @@ html {
   background-color: white;
   z-index:  9999;
   width: 390px;
-  height: 590px;
+  
   position: relative;
   
 }
@@ -1076,19 +1076,22 @@ option  {
   margin-left: 20px;
 }
 .closer {
-  position: fixed;
+  position: absolute;
   display: block;
-    margin-top: -25px;
-  margin-left: 370px;
+    top: -25px;
+  right: 0px;
   display: block;
   width: 20px;
   height: 20px;
   background-image: url(../SVG/form-x.svg);
   background-repeat: no-repeat;
-  background-size: 28px;
+  background-size: 20px;
  cursor: pointer;
   background-position: center center;
   z-index: 2;
+  background-color: transparent;
+  border: none;
+ 
  
 
 
@@ -1109,14 +1112,12 @@ option  {
 .popup__container {
    
   width: 330px;
-  height: 540px;
+  
 }
 .popup-header {
   margin-top: 30px;
 }
-.closer {
-  margin-left: 310px;
-}
+
 .feedback-text {
   margin-top: 10px;
 }
